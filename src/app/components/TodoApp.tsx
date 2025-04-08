@@ -10,6 +10,7 @@ import {
   Draggable,
   DropResult,
 } from "@hello-pangea/dnd";
+import ToogleThemeMode from "./ToogleThemeMode";
 
 export default function TodoApp() {
   const [newTodo, setNewTodo] = useState("");
@@ -49,6 +50,8 @@ export default function TodoApp() {
 
   return (
     <section className="w-full max-w-xl p-4">
+      <ToogleThemeMode />
+
       <h1 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-6">
         TODO
       </h1>
